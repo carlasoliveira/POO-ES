@@ -7,14 +7,28 @@ public class Main {
         Scanner teclado = new Scanner(System.in);
         Pessoa p = new Pessoa();
         System.out.println("Insira o nome da pessoa: ");
-        p.nome = teclado.nextLine();
+        String nome = teclado.nextLine();
         System.out.println("Insira o dia do nascimento: ");
-        p.diaNasc = teclado.nextInt();
+        int diaNasc = teclado.nextInt();
         System.out.println("Insira o mês do nascimento: ");
-        p.mesNasc = teclado.nextInt();
+        int mesNasc = teclado.nextInt();
         System.out.println("Insira o ano do nascimento: ");
-        p.anoNasc = teclado.nextInt();
-        String resultado = p.calculoIdade(p.nome, p.diaNasc, p.mesNasc, p.anoNasc);
+        int anoNasc = teclado.nextInt();
+        String resultado = calculoIdade(nome, diaNasc, mesNasc, anoNasc);
         System.out.println(resultado);
+    }
+    
+     public static String calculoIdade(String nome, int dia, int mes, int ano){
+        int idade;
+         if(mes>3){
+            idade = 2023 - ano - 1;
+        } else if(mes==3 && dia >=15){
+            idade = 2023 - ano - 1;
+        }
+        else{
+            idade = 2023 - ano;
+        }
+        String retorno = "" + nome + " - " + idade + " anos";
+        return retorno;
     }
 }
