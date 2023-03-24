@@ -1,0 +1,14 @@
+1 - Faça as seguintes tarefas:
+
+    Crie uma classe chamada Funcionario com os atributos salarioBase, totalDeVendas e salarioFinal. Crie um construtor que receba como parâmetros salarioBase e totalDeVendas, na sequência calcule o salário final sabendo que esse é calculado somando o salário base e uma porcentagem de comissão de acordo com os critérios abaixo:
+        se totalDeVendas menor que zero, o salário final será salário base menos a totalDeVendas;
+        se totalDeVendas maior que 0 e menor ou igual a R$ 10000,00, a comissão será de 10%;
+        se totalDeVendas maior que R$ 10000,00 e menor ou igual a R$ 20000,00, a comissão será de 15%;
+        se totalDeVendas maior que R$ 20000,00, a comissão será de 20%.
+    Ainda na classe Funcionario, crie um método chamado imprimeAtributos, esse método deverá imprimir todos os atributos presentes na classe com a formatação que você achar melhor.
+    Crie uma classe chamada TesteFuncionario que contenha um método main. Leia o salário base e o total de vendas de um funcionário usando a classe Scanner. Instancie um objeto da classe Funcionario usando o construtor criado anteriormente. Na sequência, use o método imprimeAtributos para verficar o estado atual do objeto criado.
+    
+    2 - Faça as seguintes tarefas:
+
+    Crie uma classe chamada Estudante com os atributos, notaUm, notaDois e media. Crie um construtor que receba como parâmetro a notaUm e a notaDois, na sequência calcule a média do estudante dentro do construtor e defina o atributo media;
+    Crie uma classe chamada TesteEstudante que contenha um método main. Leia as notas de dois estudantes usando a classe Scanner. Instancie dois objetos da classe Estudante usando o construtor criado anteriormente. Na sequência, imprima os valores dos atributos dos dois objetos.
